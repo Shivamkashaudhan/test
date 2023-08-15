@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('enviroment') {
+            steps {
+                echo "build id is $BUILD_ID"
+            }
+        }  
+        stage('Deploy') {
+            steps {
+               echo "deploying the applocation"
+            }
+         }
+    }
+}
