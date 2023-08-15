@@ -14,7 +14,7 @@ pipeline {
         }  
         stage('Deploy') {
             steps {
-               echo "deploying the applocation"
+               echo "deploying the application"
             }
          }
     }
